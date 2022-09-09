@@ -39,7 +39,7 @@ namespace Lab1.ex1
             volume = length * Math.PI * (Math.Pow(radius, 2) * Math.Pow(radiusInternal, 2));
             weigth = volume * density;
 
-            MessageBox.Show($"Масса трубы:{Convert.ToString(weigth)}\n Объем трубы равен: {Convert.ToString(volume)}");
+            MessageBox.Show($"Масса трубы:{Math.Round((weigth), 6)}\n Объем трубы равен: {Math.Round((volume), 6)}");
         }
 
         private void UserLength_KeyPress(object sender, KeyPressEventArgs e)
