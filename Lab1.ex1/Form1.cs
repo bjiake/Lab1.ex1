@@ -24,7 +24,8 @@ namespace Lab1.ex1
             double radiusInternal = Convert.ToDouble(UserInternalRadius.Text);
             double density = Convert.ToDouble(UserDensity.Text);
             double volume, weigth;
-            if(length == 0 || radiusInternal == 0 || radiusInternal == 0 || density == 0 || radius < radiusInternal )
+
+            if(length == 0 || radiusInternal == 0 || radiusInternal == 0 || density == 0 || radius < radiusInternal )//Не корректные данные
             {
                 UserLength.Text = "";
                 UserDensity.Text = "";
